@@ -58,11 +58,12 @@ if [[ -f $1 ]]; then
     rm -R "$1_tmp"
     echo "Finished!"
 elif [[ $1 == "--help" ]]; then
-    echo "$1 - Mozilla XPI version patcher"
-    echo "Changes addon's version requirements to make it installable on almost any browser"
-    echo "Requires zip, unzip and write privilege"
-    echo "Usage:"
-    echo "$1 <file>"
+    echo "$0 - Mozilla XPI version patcher
+Changes addon's version requirements to make it installable on almost any browser
+Requires zip, unzip and write privilege
+
+Usage:
+$0 <file>"
 else
-    echo "No such file or directory!"
+    echo "No file given!"
 fi
